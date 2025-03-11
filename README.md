@@ -40,26 +40,30 @@ Sigue estos pasos para ejecutar el proyecto de la aplicación NestJS usando Dock
    ```
 
 3. **Construir y Ejecutar los Contenedores**
-   - Primero, baja cualquier contenedor existente:
+   - Primero, detener y eliminar cualquier recurso existente creado previamente :
      ```bash
-     docker-compose down
+     docker compose down
      ```
    - Construye las imágenes de Docker:
      ```bash
-     docker-compose build
+     docker compose build
      ```
    - Inicia los contenedores:
      ```bash
-     docker-compose up
+     docker compose up
      ```
 
 4. **Acceder a la Aplicación**
    - Una vez que los contenedores estén en funcionamiento, puedes acceder a la aplicación NestJS en `http://localhost:3000`.
+   - O bien con el comando `curl`:
+   ```bash
+   $ curl http://localhost:3000 
+   ```
 
 5. **Detener los Contenedores**
-   - Para detener los contenedores en ejecución, usa:
+   - Para detener y eliminar los contenedores en ejecución, use:
      ```bash
-     docker-compose down
+     docker compose down
      ```
 
 ## Variables de Entorno
