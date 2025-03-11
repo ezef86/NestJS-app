@@ -14,11 +14,9 @@ Nest es un proyecto de código abierto con licencia MIT. Puede crecer gracias a 
 
 Nest tiene [licencia MIT](LICENSE).
 
-# Proyecto EducacionIT App
-
 ## Prerrequisitos
 
-Para ejecutar esta aplicación NestJS con Docker Compose, es necesario tener instalados los siguientes componentes:
+Para ejecutar esta aplicación en NestJS con Docker Compose, es necesario tener instalados los siguientes componentes:
 
 - Node.js
 - Docker
