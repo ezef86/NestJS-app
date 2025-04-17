@@ -1,11 +1,11 @@
-FROM node:18-alpine AS deps
+FROM node:23-bookworm-slim AS deps
 
 WORKDIR /app
 
 COPY package.json package-lock.json ./
 RUN npm install --legacy-peer-deps
 
-FROM node:18-alpine AS builder
+FROM node:23-bookworm-slim AS builder
 
 WORKDIR /app
 
@@ -18,7 +18,7 @@ ENV NODE_ENV=production
 RUN npm ci --only=production --legacy-peer-deps \
     && npm cache clean --force
 
-FROM node:18-alpine AS runner
+FROM node:23-bookworm-slim AS runner
 
 WORKDIR /app
 

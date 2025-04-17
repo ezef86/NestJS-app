@@ -11,6 +11,7 @@ services:
       - mongodb_data:/data/db
   app:
     container_name: educacionit-app
+    image: educacionit-app:latest
     build:
       context: .
       dockerfile: Dockerfile
